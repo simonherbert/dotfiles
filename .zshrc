@@ -99,4 +99,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
+alias vim='nvim'
+alias vi='nvim'
+alias confzsh='nvim ~/.zshrc'
+alias conftmux='nvim ~/.tmux.conf'
+alias confnvim='nvim ~/.config/nvim/init.vim'
+alias upgrade='sudo apt update && sudo apt full-upgrade -y'
+alias config='/usr/bin/git --git-dir $HOME/.cfg --work-tree $HOME'
