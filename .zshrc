@@ -1,5 +1,6 @@
+export GOPATH=$HOME/go
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$GOPATH/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/simon/.oh-my-zsh"
@@ -104,5 +105,7 @@ alias vi='nvim'
 alias confzsh='nvim ~/.zshrc'
 alias conftmux='nvim ~/.tmux.conf'
 alias confnvim='nvim ~/.config/nvim/init.vim'
+alias install='sudo apt install -y'
 alias upgrade='sudo apt update && sudo apt full-upgrade -y'
 alias config='/usr/bin/git --git-dir $HOME/.cfg --work-tree $HOME'
+

@@ -76,3 +76,6 @@ set encoding=UTF-8
 
 " ##### Tab settings
 set sw=2
+
+" ##### Enable relative line numbers
+set relativenumber
