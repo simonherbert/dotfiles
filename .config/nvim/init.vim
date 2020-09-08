@@ -8,6 +8,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " ##### FZF ignore all in .gitignore
@@ -68,9 +71,13 @@ autocmd CursorMoved * silent call CocActionAsync('highlight')
 " Symbol renaming
 nmap <leader>rn <Plug>(coc-rename)
 
-" ##### Use gruvbox theme
+" ##### Configure theme
 autocmd vimenter * colorscheme gruvbox
+set cursorline
 
+" ##### Configure airline
+"let g:airline_theme = 'gruvbox'
+set noshowmode
 " ##### Settings for devicons
 set encoding=UTF-8
 
@@ -79,3 +86,9 @@ set sw=2
 
 " ##### Enable relative line numbers
 set relativenumber
+
+" ##### fugitive settings
+nmap <leader>gs :G<CR>
+nmap <leader>gp :Gpush<CR>
+nmap <leader>gl :Gpull<CR>
+nmap <leader>gc :GCommit<CR>
